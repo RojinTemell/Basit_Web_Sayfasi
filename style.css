@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+  background-image:url(bg.jpg);
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(86, 165, 235);
+}
+.navbar .logo{
+    display: inline-block; /* */
+    margin-left: 50px ;
+    margin-top: 20px;
+}
+.navbar .logo a{
+    text-decoration: none; /*  etiketin altındaki link çizgisini kaldırır */
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #f3f3f3;
+}
+.navbar ul{
+   float: right;
+   margin-right: 20px;
+}
+.navbar ul li{
+   list-style: none;/* listenin yanındaki noktaları götürür */
+   display: inline-block;/* listeleri yan yana yazar */
+   margin: 0 8px;
+   line-height: 80px ;  
+ 
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;  
+    transition: 2s;  
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background:  rgb(198, 217, 233) ;
+    color: rgb(86, 165, 235);
+    border-radius: 2 px;
+}
+.center{
+   position:absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   font-family: sans-serif;
+   user-select: none;/* yaznın kopyasını almayı engeller*/
+}
+.center h1{
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+    
+}
+.center h2{
+    color: rgb(239, 230, 230);
+    font-size: 40px;
+    font-weight: bold;
+    width: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+.center .buttons{
+    margin: 35px 280px;
+}
+.buttons button{
+    height: 40px;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 5px;
+    background:rgb(86, 165, 235) ;
+    color: rgb(198, 217, 233) ;
+    border: solid 1px rgb(86, 165, 235) ;
+    cursor: pointer;/*üstüne gelince fare değişmesi*/
+    outline: none;/* dış hattın görünmesini engeller*/
+    transition: 2s;
+}
+.buttons button:hover{
+    background:rgb(198, 217, 233);
+    color: rgb(86, 165, 235) ;
+}
